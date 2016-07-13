@@ -9,7 +9,7 @@ import share from 'share-js'
 const dom = document.querySelector('a')
 
 dom.onclick = function () {
-  share.to.weibo({
+  share.weibo({
     bdText: 'Share to weibo'
     bdUrl: 'http://your-web-site'
     bdPic: 'http://share-with-pictures'
