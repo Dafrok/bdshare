@@ -1,19 +1,19 @@
 {
-  "name": "bsshare",
+  "name": "bdshare",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dafrok/share-js.git"
+    "url": "git+https://github.com/Dafrok/bdshare.git"
   },
   "author": "Dafrok <o.o@mug.dog>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Dafrok/share-js/issues"
+    "url": "https://github.com/Dafrok/bdshare/issues"
   },
-  "homepage": "https://github.com/Dafrok/share-js#readme",
+  "homepage": "https://github.com/Dafrok/bdshare/#readme",
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
     "jquery": "^1.12.4",
