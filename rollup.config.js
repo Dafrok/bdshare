@@ -7,7 +7,7 @@ export default {
     entry: 'src/index.js',
     dest: 'index.js',
     format: 'umd',
-    moduleName: 'share-js',
+    moduleName: 'bdshare',
     plugins: [
         // babel({presets: ['es2015-rollup']}),
         nodeResolve({

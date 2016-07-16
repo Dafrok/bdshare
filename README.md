@@ -1,4 +1,4 @@
-# share-js
+# bdshare
 A shell of bdshare.
 
 ## Usage
