@@ -4,7 +4,7 @@ A shell of bdshare.
 ## Usage
 
 ```javascript
-import share from 'share-js'
+import share from 'bdshare'
 
 const dom = document.querySelector('a')
 
@@ -15,4 +15,9 @@ dom.onclick = function () {
     bdPic: 'http://share-with-pictures'
   })
 }
+```
+
+## Install
+```
+$ npm i bdshare
 ```
