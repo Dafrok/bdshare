@@ -17,6 +17,22 @@ dom.onclick = function () {
 }
 ```
 
+## API
+
+### bdshare.weibo
+
+### bdshare.qzone
+
+### bdshare.wechat
+
+## Options
+
+### bdText
+
+### bdUrl
+
+### bdPic
+
 ## Install
 ```
 $ npm i bdshare
