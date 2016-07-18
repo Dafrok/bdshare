@@ -1,4 +1,6 @@
 import $ from 'jquery'
+import init from './init.js'
+import shareDOM from './share-dom/index.js'
 
 var $body = $('body');
 var $share = $('<div class="share-btn"></div>').css({display: 'none'});
@@ -7,31 +9,13 @@ var $weibo = $('<a href="javascript:;" class="bds-btn btn-weibo bds_tsina" data-
 var $qzone = $('<a href="javascript:;" class="bds-btn btn-qzone bds_qzone" data-cmd="qzone"></a>');
 var $wechat = $('<a href="javascript:;" class="bds-btn btn-wechat bds_weixin" data-cmd="weixin"></a>');
 
-$shareGroup.appendTo($share)
-  .append($weibo)
-  .append($qzone)
-  .append($wechat);
+const shareList = []
+shareList.push($weibo)
+shareList.push($qzone)
+shareList.push($wechat)
+shareDOM.bind(shareList)
 
-$share.appendTo($body);
-
-window._bd_share_config = {
-  common: {
-      onBeforeClick: setShareData
-  },
-  share: [{
-      bdSize: 0
-  }]
-};
-
-document.getElementsByTagName('head')[0].appendChild(
-  document.createElement('script')).src = 'http://bdimg.share.baidu.com/'
-  + 'static/api/js/share.js?v=89860593.js?cdnversion='
-  + ~(-new Date() / 36e5);
-
-function setShareData(cmd, config) {
-  config = window._bd_share_config.common;
-  return config;
-}
+init()
 
 module.exports = {
   weibo: function (options) {
