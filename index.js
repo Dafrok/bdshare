@@ -11037,7 +11037,7 @@
 	    }]
 	  };
 	  document.getElementsByTagName('head')[0].appendChild(
-	    document.createElement('script')).src = 'http://bdimg.share.baidu.com/'
+	    document.createElement('script')).src = '//bdimg.share.baidu.com/'
 	    + 'static/api/js/share.js?v=89860593.js?cdnversion='
 	    + ~(-new Date() / 36e5);
 	}
@@ -11090,24 +11090,27 @@
 	    'copy'
 	]
 
-	const $body = $('body')
-	const handlers$1 = {}
-	var $share = $('<div class="bdsharebuttonbox"></div>').css({display: 'none'});
-	for (var i = 0; i < cmdList.length; i++) {
-	    ~function (i) {
-	        var $item = $('<a data-cmd="' + cmdList[i] + '"></a>').appendTo($share);
-	        handlers$1[cmdList[i]] = function (options) {
-	            window._bd_share_config.common = options || window._bd_share_config.common;
-	            $item[0].click();
-	        }
-	    }(i)
+	function bindShareDOM () {
+	    const $body = $('body')
+	    const handlers = {}
+	    const $share = $('<div class="bdsharebuttonbox"></div>').css({display: 'none'})
+	    for (var i = 0; i < cmdList.length; i++) {
+	        ~function (i) {
+	            var $item = $('<a data-cmd="' + cmdList[i] + '"></a>').appendTo($share)
+	            handlers[cmdList[i]] = function (options) {
+	                window._bd_share_config.common = options || window._bd_share_config.common
+	                $item[0].click();
+	            }
+	        }(i)
+	    }
+	    $share.appendTo($body);
+	    return handlers
 	}
-	$share.appendTo($body);
 
 	// import createShareDOM from './create.js'
 
 	var shareDOM = {
-	  bind: handlers$1
+	  bind: bindShareDOM
 	  // create: createShareDOM
 	}
 

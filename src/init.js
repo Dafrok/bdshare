@@ -12,7 +12,7 @@ export default function () {
     }]
   };
   document.getElementsByTagName('head')[0].appendChild(
-    document.createElement('script')).src = 'http://bdimg.share.baidu.com/'
+    document.createElement('script')).src = '//bdimg.share.baidu.com/'
     + 'static/api/js/share.js?v=89860593.js?cdnversion='
     + ~(-new Date() / 36e5);
 }
