@@ -11423,12 +11423,12 @@
 	    }), !window._bd_share_is_recently_loaded && window._bd_share_main.F.module("conf/const", function(e, t, n) {
 	        t.CMD_ATTR = "data-cmd", t.CONFIG_TAG_ATTR = "data-tag", t.URLS = {
 	            likeSetUrl: "http://like.baidu.com/set",
-	            commitUrl: "http://s.share.baidu.com/commit",
-	            jumpUrl: "http://s.share.baidu.com",
-	            mshareUrl: "http://s.share.baidu.com/mshare",
-	            emailUrl: "http://s.share.baidu.com/sendmail",
-	            nsClick: "http://nsclick.baidu.com/v.gif",
-	            backUrl: "http://s.share.baidu.com/back",
+	            commitUrl: location.protocol === "https:" ? "https://sp0.baidu.com/5foZdDe71MgCo2Kml5_Y_D3/commit" : "http://s.share.baidu.com/commit",
+	            jumpUrl: location.protocol === "https:" ? "https://sp0.baidu.com/5foZdDe71MgCo2Kml5_Y_D3" : "http://s.share.baidu.com",
+	            mshareUrl: location.protocol === "https:" ? "https://sp0.baidu.com/5foZdDe71MgCo2Kml5_Y_D3/mshare" : "http://s.share.baidu.com/mshare",
+	            emailUrl: location.protocol === "https:" ? "https://sp0.baidu.com/5foZdDe71MgCo2Kml5_Y_D3/sendmail" : "http://s.share.baidu.com/sendmail",
+	            nsClick: location.protocol === "https:" ? "https://sp1.baidu.com/8qUJcD3n0sgCo2Kml5_Y_D3/v.gif" : "http://nsclick.baidu.com/v.gif",
+	            backUrl: location.protocol === "https:" ? "https://sp0.baidu.com/5foZdDe71MgCo2Kml5_Y_D3/back" : "http://s.share.baidu.com/back",
 	            shortUrl: "http://dwz.cn/v2cut.php"
 	        }
 	    }), !window._bd_share_is_recently_loaded && function() {
