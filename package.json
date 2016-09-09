@@ -1,6 +1,6 @@
 {
   "name": "bdshare",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {},
@@ -16,7 +16,6 @@
   "homepage": "https://github.com/Dafrok/bdshare/#readme",
   "devDependencies": {
     "babel-preset-es2015-rollup": "^1.1.1",
-    "jquery": "^1.12.4",
     "rollup": "^0.34.1",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-commonjs": "^3.1.0",
