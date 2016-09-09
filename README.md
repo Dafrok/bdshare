@@ -10,12 +10,12 @@ $ npm i bdshare
 ## Usage
 
 ```javascript
-import share from 'bdshare'
+import bdshare from 'bdshare'
 
 const dom = document.querySelector('a')
 
 dom.onclick = function () {
-  share.tsina({
+  bdshare.tsina({
     bdText: 'Share to weibo',
     bdUrl: 'http://your-web-site',
     bdPic: 'http://share-with-pictures'
