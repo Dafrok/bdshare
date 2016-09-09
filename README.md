@@ -1,6 +1,12 @@
 # bdshare
 A shell of bdshare.
 
+## Install
+
+```
+$ npm i bdshare
+```
+
 ## Usage
 
 ```javascript
@@ -19,7 +25,7 @@ dom.onclick = function () {
 
 ## Options
 
-- bdText
+- bdText 
 - bdUrl
 - bdPic
 
@@ -69,8 +75,3 @@ dom.onclick = function () {
 - s51
 - zx
 - linkedin
-
-
-```
-$ npm i bdshare
-```
