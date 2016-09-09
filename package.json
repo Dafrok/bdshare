@@ -3,7 +3,9 @@
   "version": "0.0.5",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "package": "rollup -c"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dafrok/bdshare.git"
